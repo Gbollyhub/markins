@@ -616,14 +616,14 @@
   color: #fff;
 }
 
-.drop-down-list.w--open {
+.drop-down-list {
   padding-right: 20px;
   padding-left: 20px;
   border-style: solid;
   border-width: 1px;
   border-color: #dbdbdb;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .drop-down-link {
@@ -820,6 +820,7 @@
 }
 
 .card-title {
+  color: #000;
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -958,6 +959,18 @@
   flex-wrap: wrap;
 }
 
+.product-row-search-result {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0rem;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+justify-content: space-between;
+align-content: space-between;
+}
 .product-col {
   padding-right: 20px;
   -webkit-box-flex: 0;
@@ -967,10 +980,11 @@
 }
 
 .product-col.search-result {
+  padding-right: 0;
   margin-bottom: 1.5rem;
-  -webkit-flex-basis: 33.3%;
-  -ms-flex-preferred-size: 33.3%;
-  flex-basis: 33.3%;
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
 }
 
 .product-image-div {
@@ -979,6 +993,7 @@
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  width: 100%;
   height: 200px;
   margin-bottom: 1rem;
   padding: 14px;
@@ -1382,7 +1397,7 @@
 
 .filter-card {
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -1423,12 +1438,13 @@
 }
 
 .filter-header {
+  color: rgb(38, 38, 38);
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .filter-header.mobile {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -1808,7 +1824,7 @@
 
 .auth-filed {
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 
 .auth-div {
@@ -2208,7 +2224,7 @@
 .profile-textfield {
   margin-bottom: 0px;
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 0.7rem !important;
 }
 
 .profile-col-row {
@@ -2234,7 +2250,7 @@
 
 .profile-textarea {
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 0.7rem !important;
 }
 
 .div-block-7 {
@@ -3462,7 +3478,7 @@
   }
 
   .filter-mobile {
-    display: none;
+    display: block;
   }
 
   .mobile-menu-action {
